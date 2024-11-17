@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="cs112.lab09.controllers.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MainController">
+   <children>
+      <Label fx:id="titleLabel" text="Interactive Revisionist History Map">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="subtitleLabel" text="Red Summer Edition">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" prefHeight="164.0" prefWidth="363.0" text="In 1919, Red Summer was a pattern of white-on-black violence that occurred in more than three dozen cities across the United States and in one rural county in Arkansas. The term &quot;Red Summer&quot; was coined by civil rights activist and author James Weldom Johnson, who had been employed as a field secretary by the National Association for the Advancement of Colored People (NAACP) since 1916. It was branded &quot;Red Summer&quot; because of the bloodshed that occurred during the worst white-on-black violence in U.S. history." textAlignment="CENTER" wrapText="true" />
+      <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Red-Summer.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#onStartButtonClicked" text="Start" />
+            <Button fx:id="quitButton" mnemonicParsing="false" onAction="#onQuitButtonClicked" text="Quit" />
+         </children>
+      </HBox>
+   </children>
 </VBox>
