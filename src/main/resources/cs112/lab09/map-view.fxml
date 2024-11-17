@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.MapController">
+   <children>
+      <ImageView fitHeight="465.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Red-Summer.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="sanFranciscoCaliforniaButton" layoutY="191.0" mnemonicParsing="false" onAction="#onSanFranciscoCaliforniaButtonClicked" prefHeight="42.0" prefWidth="96.0" text="San Francisco California" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bisbeeArizonaButton" layoutX="105.0" layoutY="334.0" mnemonicParsing="false" onAction="#onBisbeeArizonaButtonClicked" prefHeight="42.0" prefWidth="61.0" text="Bisbee Arizona" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
